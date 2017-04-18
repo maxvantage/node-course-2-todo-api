@@ -31,7 +31,6 @@ app.get('/todos', (req, res) => {
   })
 })
 
-// GET /todos/1234567890
 app.get('/todos/:id', (req, res) => {
   const id = req.params.id
   if (!ObjectID.isValid(id)) {
